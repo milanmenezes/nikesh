@@ -1,0 +1,61 @@
+/*
+ * Base structure
+ */
+
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+body {
+
+  /*height: 800px;*/
+  text-align: center;
+	background: #4b6cb7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(black,#182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(black, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h4 {
+  padding: 2px;
+}
+
+h5 {
+  padding: 2px;
+}
+
+.outer {
+  color: white;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.counter {
+  font-size: 12px;
+  color:white;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: -10px;
+	text-align: center;
+}
+
+li {
+  text-align: left;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 288px;
+  color: white;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}

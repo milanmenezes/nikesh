@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="keywords" content="Nikesh Prasasd, Secret Santa" >
+    <meta name="description" content="Nikesh's gift from a secret santa">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+          <!-- Custom styles for this template -->
+    <link href="snowstorm.css" rel="stylesheet">
+
+    <script type="text/javascript" src="snowstorm.js"></script>
+
+    <script>
+     	function startTime() {
+
+         var today=new Date();
+         var currentTime_local=today.getTime();//gets local epoch time in ms
+
+         //intialize two variables for local TESTING
+         //var d = new Date("January 11, 2019 00:00:00");//each variable is local
+         //var e = new Date("January 11, 2019 23:59:59");//each variable is local
+
+         //intialize two variables for local time XMAS - change year only every year
+         var d = new Date("December 25, 2019 00:00:00");//each variable is local
+         var e = new Date("December 25, 2019 23:59:59");//each variable is local
+
+        //convert these local variables to unix epoch time in ms
+          d = d.getTime();
+          e = e.getTime();
+
+        //following values are local values
+        var xmasLocal_start = d;//xmasTime Local Start
+        var xmasLocal_end =   e;//xmasTime Local End
+
+        if(currentTime_local >= xmasLocal_start && currentTime_local <= xmasLocal_end)
+        {
+                document.getElementById('p1').innerHTML = "YES";
+        }
+        else
+        {
+                document.getElementById('p1').innerHTML = "NO";
+        }
+
+        document.getElementById('p2').innerHTML = d;
+        document.getElementById('p3').innerHTML = e;
+        document.getElementById('p4').innerHTML = currentTime_local;
+	}
+</script>
+
+    <title>Nikesh: Secret Santa</title>
+  </head>
+ <body onload="startTime()">
+      <!-- <h1 id="p1">NO</h1> -->
+      <div class="container outer">
+      <h2>Hi Nikesh</h2>
+      <h4>This is your Secret Santa. I have bought this domain as your gift and I hope you like it.</h4>
+      <h5>You can use this domain in the following ways:</h5>
+      <ul>
+        <li><h6>Portfolio Website :</h6> I know that you have gained a huge set of skills throughout your career, you could showcase the same through this domain.</li>
+        <li><h6>Gallery :</h6> I know you dont want to miss any moment which is why you carry your camera everyday. YOu could use this domain to host an online gallery. You could use tumblr and point this domain to it.</li>
+        <li><h6>Blog :</h6> I also know that you love to travel, you can use this domain as a Blog to express and document your experiences throghout your adventures. You dont necessarily need to build a website, you could just create a free account on wordpress.com and point this domain to it.</li>
+      </ul>
+      </div>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+                   <!-- AddToAny BEGIN -->
+                   <!-- <div class="a2a_kit a2a_kit_size_32 a2a_default_style" >
+                   <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                   <a class="a2a_button_facebook"></a>
+                   <a class="a2a_button_twitter"></a>
+                   <a class="a2a_button_google_plus"></a>
+                   <a class="a2a_button_reddit"></a>
+                   </div>
+                   <script async src="https://static.addtoany.com/menu/page.js"></script> -->
+                   <!-- AddToAny END -->
+         </div>
+      </nav>
+
+      <!-- <hr> -->
+
+
+<!-- <div class="row">
+  <div class="col-md-6">
+    <div class="counter">
+           views    </div>
+ </div>
+</div> -->
+
+
+      <div class="footer">
+
+
+
+
+		                 <p>Secret Santa</p>
+       </div>
+
+  </body>
+</html>
